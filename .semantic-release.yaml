@@ -1,4 +1,4 @@
-version_variable: "your_package/__init__.py:__version__"
+version_variable: "ondc_deeplink_consumer/__init__.py:__version__"
 branch: "master"
 upload_to_pypi: false
 upload_to_repository: true
