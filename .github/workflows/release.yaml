@@ -29,6 +29,4 @@ jobs:
           # PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           # PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
-          semantic-release publish -D commit_author="github-actions <sanushilshad@gmail.com>"
-
-          # semantic-release publish
+          semantic-release publish
