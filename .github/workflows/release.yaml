@@ -29,4 +29,4 @@ jobs:
           # PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           # PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
-          semantic-release publish
+          semantic-release version
