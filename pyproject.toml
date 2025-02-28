@@ -6,6 +6,6 @@ python-semantic-release = "^9.0.0"
 [tool.semantic_release]
 version_variable = "ondc_deeplink_consumer/__init__.py:__version__"
 
-branch = "main"  # Or the branch you use for releases
+branch = "master"  # Or the branch you use for releases
 upload_to_pypi = false
 upload_to_repository = true
