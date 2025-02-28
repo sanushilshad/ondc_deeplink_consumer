@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.2.0 (2025-02-28)
+
+### Bug Fixes
+
+- :bug: fix versioning
+  ([`16abfb9`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/16abfb97cf06b30c07525ad080e04cf708f763a2))
+
+### Features
+
+- Apple
+  ([`43e9eff`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/43e9effd07f2ed3aba1a239c84168d1b23fbb3d8))
+
+
 ## v0.1.0 (2025-02-28)
 
 ### Features
