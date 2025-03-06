@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.5.0 (2025-03-06)
+
+
 ## v0.4.0 (2025-03-06)
+
+### Features
+
+- Update the init version
+  ([`5c3eeba`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/5c3eeba7ce03ee8b9de75712d508b22cc4fb10f5))
 
 
 ## v0.3.0 (2025-03-06)
