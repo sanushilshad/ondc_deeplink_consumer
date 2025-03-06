@@ -30,4 +30,5 @@ jobs:
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
           PYPI_REPOSITORY_URL: "https://test.pypi.org/legacy/"
         run: |
+          python -m build &&
           semantic-release -vv  publish
