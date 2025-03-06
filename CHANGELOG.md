@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## v0.2.0 (2025-03-06)
+
+
 ## v0.1.0 (2025-03-06)
 
 ### Bug Fixes
@@ -21,6 +24,9 @@
 
 - Add aplle
   ([`a257e73`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/a257e7323816717f132cc643e6805c4c2e2fae53))
+
+- Add build command
+  ([`aa08021`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/aa08021ab802970572b9bf9f36e20c96f4874aea))
 
 - Apple
   ([`b2a5fe4`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/b2a5fe40633d8e432256253388af38901ea59f61))
