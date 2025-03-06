@@ -42,6 +42,8 @@ tag_format = "v{version}"
 version_variable = "ondc_deeplink_consumer/__init__.py:__version__"
 build_command = "python -m build"
 version_source="tag"
+upload_to_pypi = true
+upload_to_repository = true
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
