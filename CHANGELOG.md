@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.9.1 (2025-03-06)
+
+
 ## v0.9.0 (2025-03-06)
+
+### Bug Fixes
+
+- The release file
+  ([`1538186`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/153818612b0859dc85bf49784a532f2ec377cd8d))
 
 ### Features
 
