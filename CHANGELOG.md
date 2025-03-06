@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.4.0 (2025-03-06)
+
+
 ## v0.3.0 (2025-03-06)
+
+### Features
+
+- Add apple
+  ([`ff833f4`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/ff833f4df1e84141fe00c594d012ac8ba3dd952a))
 
 
 ## v0.2.0 (2025-03-06)
