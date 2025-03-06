@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.6.0 (2025-03-06)
+
+
 ## v0.5.0 (2025-03-06)
+
+### Features
+
+- Use PYPI password
+  ([`d7d66e6`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/d7d66e609c23324799dd418f399abbf0df9b1781))
 
 
 ## v0.4.0 (2025-03-06)
