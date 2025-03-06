@@ -95,6 +95,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         if: steps.release.outputs.released == 'true'
         with:
+          repository-url: https://test.pypi.org/legacy/
           password: ${{ secrets.PYPI_PASSWORD }}
 
       - name: Publish | Upload to GitHub Release Assets
