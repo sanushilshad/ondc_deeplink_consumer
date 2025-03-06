@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.8.1 (2025-03-06)
+
+
 ## v0.8.0 (2025-03-06)
+
+### Bug Fixes
+
+- Remove version from init request
+  ([`f3ae9ec`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/f3ae9ec4fbcb558c4f108545580663313f7e01be))
 
 
 ## v0.7.0 (2025-03-06)
