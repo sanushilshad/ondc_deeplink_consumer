@@ -77,8 +77,14 @@ jobs:
 
           printf '%s\n' "Verified upstream branch has not changed, continuing with release..."
 
-      - name: Build Package
-        run: python -m build
+      # - name: Build Package
+      #   run: python -m build
+
+      - name: Extract Version from Tag
+        run: echo "PACKAGE_VERSION=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+        
+      - name: Build Package with Version from Tag
+        run: PACKAGE_VERSION=${{ env.PACKAGE_VERSION }} python -m build
 
       - name: Action | Semantic Version Release
         id: release
