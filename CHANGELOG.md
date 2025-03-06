@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.3.0 (2025-03-06)
+
+
 ## v0.2.0 (2025-03-06)
+
+### Features
+
+- Bump the version to 0.9.0
+  ([`c8e8291`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/c8e8291681d903a52daca9915d8f0e0be5498bf7))
 
 
 ## v0.1.0 (2025-03-06)
