@@ -1,9 +1,9 @@
-name: Semantic Release
+name: Release
 
 on:
   push:
     branches:
-      - main  # Run only on master branch
+      - main  # Trigger releases on pushes to the main branch
 
 jobs:
   release:
@@ -12,22 +12,28 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Required for semantic-release to analyze commit history
+          fetch-depth: 0  # Full history is required for semantic-release
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install Poetry
         run: |
-          pip install python-semantic-release build
+          curl -sSL https://install.python-poetry.org | python -
+          export PATH="$HOME/.local/bin:$PATH"
+          # Optionally configure poetry to use the system virtualenv:
+          poetry config virtualenvs.create false
 
-      - name: Run semantic release
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-ansi
+
+      - name: Run semantic-release
         env:
-          GH_TOKEN: ${{ secrets.MY_GH_TOKEN }}
-          PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
-          PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-          PYPI_REPOSITORY_URL: "https://test.pypi.org/legacy/"
-        run: |
-          semantic-release -vv  publish
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}           # Your GitHub PAT (with repo scope)
+          PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}     # Your PyPI username
+          PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}     # Your PyPI API token
+          # Optionally, if testing on Test PyPI, use:
+          # PYPI_REPOSITORY_URL: "https://test.pypi.org/legacy/"
+        run: poetry run semantic-release publish
