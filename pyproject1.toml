@@ -1,0 +1,39 @@
+[project]
+name = "ondc_deeplink_consumer"
+dynamic = ["version"]
+description = "Your package description here"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+urls = { "Homepage" = "https://github.com/sanushuilshad/ondc_deeplink_consumer" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "httpx==0.28.1",
+    "pyyaml==6.0.2",
+    "jsonschema==4.23.0",
+    "pytest==8.3.4",
+    "pytest_httpx==0.35.0",
+    "pytest-asyncio==0.25.3"
+]
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.semantic_release]
+version_variable = "ondc_deeplink_consumer/__init__.py:__version__"
+version_source = "tag"
+changelog_file = "CHANGELOG.md"
+branch = "master"
+upload_to_pypi = true
+upload_to_repository = true
+build_command = "python -m build"
