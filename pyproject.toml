@@ -1,6 +1,7 @@
 [project]
 name = "ondc_deeplink_consumer"
-dynamic = ["version"]
+version = "0.0.0"
+# dynamic = ["version"]
 description = "Your package description here"
 readme = "README.md"
 requires-python = ">=3.11"
