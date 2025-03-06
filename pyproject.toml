@@ -11,6 +11,7 @@ no_git_verify = false
 tag_format = "v{version}"
 version_variable = "ondc_deeplink_consumer/__init__.py:__version__"
 build_command = "python -m build"
+version_source="tag"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
