@@ -3,7 +3,7 @@ name: Semantic Release
 on:
   push:
     branches:
-      - main  # Run only on master branch
+      - main  # Run only on the main branch
 
 jobs:
   release:
@@ -24,7 +24,7 @@ jobs:
           pip install python-semantic-release build
 
       - name: Build package  # New step to ensure dist/* is generated
-              run: python -m build
+        run: python -m build
 
       - name: Run semantic release
         env:
@@ -33,4 +33,4 @@ jobs:
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
           PYPI_REPOSITORY_URL: "https://test.pypi.org/legacy/"
         run: |
-          semantic-release -vv  publish
+          semantic-release -vv publish
