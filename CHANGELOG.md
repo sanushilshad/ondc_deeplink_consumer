@@ -1,7 +1,15 @@
 # CHANGELOG
 
 
+## v0.8.0 (2025-03-06)
+
+
 ## v0.7.0 (2025-03-06)
+
+### Features
+
+- Add apple to the tree
+  ([`727acdb`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/727acdb2bd634dc20a47f96f9e592eaeccf1c4ce))
 
 
 ## v0.6.0 (2025-03-06)
