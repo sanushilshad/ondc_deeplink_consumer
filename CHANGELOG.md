@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.9.0 (2025-03-06)
+
+### Features
+
+- Apple
+  ([`58989cb`](https://github.com/sanushilshad/ondc_deeplink_consumer/commit/58989cb00c5e27c6266fa3ceb2dd01c92479f7f2))
+
+
 ## v0.8.1 (2025-03-06)
 
 
