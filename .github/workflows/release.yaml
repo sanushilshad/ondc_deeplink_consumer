@@ -77,6 +77,9 @@ jobs:
 
           printf '%s\n' "Verified upstream branch has not changed, continuing with release..."
 
+      - name: Build Package
+        run: python -m build
+
       - name: Action | Semantic Version Release
         id: release
         # Adjust tag with desired version if applicable.
@@ -85,9 +88,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           git_committer_name: "sanushilshad"
           git_committer_email: "sanushilshad@gmail.com"
-          
-      - name: Build Package
-        run: python -m build
+
+
 
       - name: Publish | Upload package to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
