@@ -8,6 +8,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -23,15 +24,16 @@ jobs:
         run: |
           pip install python-semantic-release build
 
-      - name: Build package  # New step to ensure dist/* is generated
+      - name: Build package  # Ensure dist/* is generated
         run: python -m build
 
       - name: Run semantic release
+        id: release  # <-- Added ID to reference outputs
         env:
-          GH_TOKEN: ${{ secrets.MY_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # <-- Fixed token name
           PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-          PYPI_REPOSITORY_URL: "https://test.pypi.org/legacy/"
+          PYPI_REPOSITORY_URL: "https://test.pypi.org/legacy/"  # <-- Publishes to TestPyPI
         run: |
           semantic-release -vv publish
 
